@@ -98,14 +98,14 @@ nav ul li{
     opacity: 0;
     transition: 1s;
 }
-@media (max-width: 600px){
+@media only screen and (max-width: 660px){
     .bottom{
         height: 100px;
     }
     #MyProcessBar{
-        width: 50vh;
+        width: 30vh;
         cursor: pointer;
-        margin-top: 50px;
+        margin-top: 25px;
     }
     .SongInfo{
         position:absolute;
@@ -113,8 +113,6 @@ nav ul li{
         left: auto;
         top: 1vh;
         font-family: 'Roboto', sans-serif;
-    .icon{
-        margin-top: 5vh;
-    }
+    
 }
 }
