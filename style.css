@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+body{
+    background-color: antiquewhite;
+}
+*{
+    margin: 0px;
+    padding: 0px;
+}
+ul{
+    display: flex;
+    align-items: center;
+    list-style: none;
+    color: white;
+    background: black;
+    height: 60px;
+    font-family: 'Roboto', sans-serif;
+    
+
+}
+ul img{
+    height: 45px;
+    padding: 0px 8px;
+}
+.brand{
+    display: flex;
+    align-items: center;
+    font-size: 1.3rem;
+}
+nav ul li{
+    padding: 0px 15px;
+}
+.container{
+    min-height: 72vh;
+    background-color: black;
+    background-image: url(bg.jpg);
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    margin: 23px auto;
+    width: 70%;
+    border-radius: 12px;
+    padding: 34px;
+    overflow:visible;
+    background-size: cover;
+
+}
+.bottom{
+    position: sticky;
+    bottom: 0;
+    background-color: black;
+    color: white;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+#MyProcessBar{
+    width: 100vh;
+    cursor: pointer;
+}
+.icon i{
+    cursor: pointer;
+    padding: 2px;
+}
+
+.SongListPlay{
+    height: px;
+
+}
+.SongItem{
+    height: 50px;
+    display: flex;
+    color: black;
+    background-color: white;
+    border-radius: 34px;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 0px;
+
+}
+.SongItem img{
+   width: 43px;
+   border-radius: 50px;
+   margin: 0px 23px;
+}
+.timespan{
+    margin: 0px 23px;
+    cursor: pointer;
+}
+.SongInfo{
+    position:absolute;
+    left: 8vw;
+    font-family: 'Roboto', sans-serif;
+}
+
+.SongInfo img{
+    opacity: 0;
+    transition: 1s;
+}
+@media (max-width: 600px){
+    .bottom{
+        height: 100px;
+    }
+    #MyProcessBar{
+        width: 50vh;
+        cursor: pointer;
+        margin-top: 50px;
+    }
+    .SongInfo{
+        position:absolute;
+        align-items: center;
+        left: auto;
+        top: 1vh;
+        font-family: 'Roboto', sans-serif;
+    .icon{
+        margin-top: 5vh;
+    }
+}
+}
