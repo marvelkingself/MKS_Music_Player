@@ -7,15 +7,15 @@ let MyProcessBar = document.getElementById('MyProcessBar');
 let gif = document.getElementById('gif');
 let songItem = Array.from(document.getElementsByClassName('songitem'));
 let song = [
-    { songName: "warriyo ", filePath: "songs/1.mp3", coverPath: "covers/1.jpg" },
-    { songName: "Cielo ", filePath: "songs/2.mp3", coverPath: "covers/2.jpg" },
-    { songName: "Deaf KEV", filePath: "songs/3.mp3", coverPath: "covers/3.jpg" },
-    { songName: "Different ", filePath: "songs/4.mp3", coverPath: "covers/4.jpg" },
-    { songName: "Janji-Heros", filePath: "songs/5.mp3", coverPath: "covers/5.jpg" },
-    { songName: "Mere Bina", filePath: "songs/6.mp3", coverPath: "covers/6.jpg" },
-    { songName: "Tum Kya", filePath: "songs/7.mp3", coverPath: "covers/7.jpg" },
-    { songName: " khulle khar", filePath: "songs/8.mp3", coverPath: "covers/8.jpg" },
-    { songName: "RangLageya", filePath: "songs/9.mp3", coverPath: "covers/9.jpg" },
+    { songName: "warriyo - mortals", filePath: "songs/1.mp3", coverPath: "covers/1.jpg" },
+    { songName: "Cielo -huma huma", filePath: "songs/2.mp3", coverPath: "covers/2.jpg" },
+    { songName: "Deaf KEV- Inv", filePath: "songs/3.mp3", coverPath: "covers/3.jpg" },
+    { songName: "Different Haven", filePath: "songs/4.mp3", coverPath: "covers/4.jpg" },
+    { songName: "Janji-Heros-Tonight", filePath: "songs/5.mp3", coverPath: "covers/5.jpg" },
+    { songName: "Mere Bina Crook", filePath: "songs/6.mp3", coverPath: "covers/6.jpg" },
+    { songName: "Tum Kya Mile", filePath: "songs/7.mp3", coverPath: "covers/7.jpg" },
+    { songName: " khulle kharche", filePath: "songs/8.mp3", coverPath: "covers/8.jpg" },
+    { songName: "Rang-Lageya---", filePath: "songs/9.mp3", coverPath: "covers/9.jpg" },
     { songName: " Check It Out", filePath: "songs/10.mp3", coverPath: "covers/10.jpg" },
 ]
 song.forEach((element, i) => {
@@ -62,9 +62,10 @@ Array.from(document.getElementsByClassName('songItemPlay ')).forEach((element) =
 
         e.target.classList.remove("fa-play-circle");
         e.target.classList.add("fa-pause-circle");
-
-        audioElement.src = "songs/" + index + ".mp3"
         songMaster.innerText=song[index].songName;
+        
+        audioElement.src = "songs/" + ++index + ".mp3"
+        
         audioElement.currentTime = 0;
         audioElement.play()
         gif.style.opacity = 1;
